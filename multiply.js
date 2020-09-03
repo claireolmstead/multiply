@@ -31,15 +31,22 @@ function multiply2(){
 	var num2 = document.getElementById('number2').value *1;
 	var num3 = document.getElementById('number3').value *1;
 	var answer = 0;
+	let getAnswer = 0;
 	//base case
 	if ((num1 === 0) || (num2 === 0) || (num3 === 0)){
 		//write answer to element
 		document.getElementById('product2').innerHTML = 0;
 	//if answer != 0
 	}else{
+		for(var i = 0; i < num1; i++){
+			answer += num2;
+		}
+		for(var j = 0; j < answer; j++){
+			getAnswer += num3;
+		}
 	}
 	//write answer to element
-	document.getElementById('product2').innerHTML = answer;
+	document.getElementById('product2').innerHTML = getAnswer;
 }
 
 
